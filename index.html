@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multi-step form</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div>
+                <div class="step-num active">1</div>
+                <div>
+                    <p>step 1</p>
+                    <p>your info</p>
+                </div>
+            </div>
+            <div>
+                <div class="step-num">2</div>
+                <div>
+                    <p>step 2</p>
+                    <p>select plan</p>
+                </div>
+            </div>
+            <div>
+                <div class="step-num">3</div>
+                <div>
+                    <p>step 3</p>
+                    <p>add-ons</p>
+                </div>
+            </div>
+            <div>
+                <div class="step-num">4</div>
+                <div>
+                    <p>step 4</p>
+                    <p>summary</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps-container">
+            
+            <div class="personal-info steps">
+                <h2>personal info</h2>
+                <p>Please provide your name, email address, and phone number.</p>
+                <div>
+                    <div>
+                        <p>Name</p>
+                        <div class="name-err err">error</div>
+                    </div>
+                    <input type="text" class="name-input" placeholder="e.g.Stephen King">
+                </div>
+                <div>
+                    <div>
+                        <p>email address</p>
+                        <div class="email-err err">error</div>
+                    </div>
+                    <input type="email" class="email-input" placeholder="e.g.stephenking@lorem.com">
+                </div>
+                <div>
+                    <div>
+                        <p>phone number</p>
+                        <div class="phone-err err">This field is required</div>
+                    </div>
+                    <input type="text" class="phone-input" placeholder="e.g. +1 234 567 890">
+                </div>
+                <div class="btns">
+                    <button class="next">next step</button>
+                </div>
+            </div>
+
+            <div class="plan steps">
+                <h2>select your plan</h2>
+                <p>You have the option of monthly or yearly billing.</p>
+                <div class="plans">
+                    <div class="active">
+                        <img src="assets/images/icon-arcade.svg" alt="">
+                        <div>
+                            <p class="name">arcade</p>
+                            <p class="price">$9/mo</p>
+                            <p class="free">2 months free</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/icon-advanced.svg" alt="">
+                        <div>
+                            <p class="name">advanced</p>
+                            <p class="price">$12/mo</p>
+                            <p class="free">2 months free</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/icon-pro.svg" alt="">
+                        <div>
+                            <p class="name">pro</p>
+                            <p class="price">$15/mo</p>
+                            <p class="free">2 months free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="check-container">
+                    <div class="monthly">monthly</div>
+                    <input type="checkbox" class="billing-checkbox">
+                    <div class="yearly">yearly</div>
+                </div>
+                <div class="btns">
+                    <button class="back">go back</button>
+                    <button class="next">next step</button>
+                </div>
+            </div>
+
+            <div class="pick steps">
+                <h2>pick add-ons</h2>
+                <p>Add-ons help enhance your gaming experience.</p>
+                <div class="picks">
+                    <div>
+                        <input type="checkbox" class="pick-ons">
+                        <div>
+                            <div>
+                                <p class="pick-name">online service</p>
+                                <p>Access to multiplayer games</p>
+                            </div>
+                            <div class="pick-price">+$1/mo</div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="pick-ons">
+                        <div>
+                            <div>
+                                <p class="pick-name">larger storage</p>
+                                <p>Extra 1tb of cloud save</p>
+                            </div>
+                            <div class="pick-price">+$2/mo</div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="pick-ons">
+                        <div>
+                            <div>
+                                <p class="pick-name">customizable profile</p>
+                                <p>Custom theme on your profile</p>
+                            </div>
+                            <div class="pick-price">+$2/mo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="back">go back</button>
+                    <button class="next">next step</button>
+                </div>
+            </div>
+
+            <div class="finishing steps">
+                <h2>finishing up</h2>
+                <p>Double-check everything looks OK before confirming.</p>
+                <div class="checking-container">
+                    <div class="plan-choosen">
+                        <div>
+                            <div class="plan-name"></div>
+                            <a class="change-plan" href="">change</a>
+                        </div>
+                        <div class="pick-price-final">$9/mo</div>
+                    </div>
+                    <div class="ons"></div>
+                </div>
+                <div class="total-container">
+                    <p class="total-text"></p>
+                    <p class="total">+$12/mo</p>
+                </div>
+                <div class="btns">
+                    <button class="back">go back</button>
+                    <button class="confirm">confirm</button>
+                </div>
+            </div>
+
+            <div class="summary steps">
+                <div>
+                    <img src="assets/images/icon-thank-you.svg" alt="">
+                    <h2>thank you</h2>
+                    <p>Thanks for confirming your subscription! We hope you have fun using our platform. if you ever need support,
+                        please feel free to email us at support@loremgaming.com.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
